@@ -5,7 +5,19 @@ Please consider a small donation if you use this software: "2324852447570841050L
 
 ### Prerequisitions
 
+```
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+```
+
 !!! install nodejs 6 or higher, it won't work without
+
+```
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs 
+sudo apt-get install -y npm
+```
 
 ```
 sudo apt-get install python3
@@ -38,13 +50,13 @@ Edit config.json
 
     MINPAYOUT: the minimum amount for a payout
 
-    You will also need to edit app.js in the /docs or /html folder
-
-Now edit /docs/index.html and customize the webpage. When using a dedicated server just put the content of docs in /var/www/html
+Now edit /docs/index.html and customize the webpage. When using a dedicated server instead of github page you could put the content of docs in /var/www/html
+and edit /docs/app.js
 
 Finally edit poollogs.json and put in lastpayout the unixtimestamp (http://www.unixtimestamp.com/) of your last payout or the date of pool starting and donations adress and amount. 
 
-Then copy to /docs folder or /html folder when using your own dedicated server.
+Then copy to /docs folder or /html folder if using your own dedicated server instead of github page
+You can also change root for apache2 to /home/user/lisk-pool/docs
 
 ### If you are using lisk or rise you need to dpos-api-fallback:
 
