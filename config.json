@@ -1,0 +1,21 @@
+{
+	"coin": "LISK",
+	"node": "http://localhost:8000",
+	"nodepay": "http://localhost:8000",
+	"pubkey": "0e0426cf903ee24b2a39cd8f21bd8117aea5a2d2128ebdaabfa558376dc58933",
+	"address": "17961993724779895018R",
+	"percentage": 15,
+	"logfile": "poollogs.json",
+	"minpayout": 1.0,
+	"secret": "SECRET",
+	"secondsecret": "SECRET2",
+	"feededuct": false,
+    "donations": {
+		"17961993724779895018R": 150
+    },
+    "donationspercentage": {
+	},
+	"private": false,
+	"whitelist": [],
+	"skip": []
+}
